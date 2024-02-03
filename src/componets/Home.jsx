@@ -15,11 +15,11 @@ export default function Home() {
             Dashboard
           </Button>
           <Menu {...bindMenu(popupState)}>
-          <Link to='/appDrawer' style={linkStyle}>
-            <MenuItem onClick={popupState.close}> Drawer </MenuItem>
-            </Link>
           <Link to='/clippedDrawer' style={linkStyle}>
-            <MenuItem onClick={popupState.close}>Second Drawer</MenuItem>
+            <MenuItem onClick={popupState.close}> Drawer</MenuItem>
+            </Link>
+            <Link to='/appDrawer' style={linkStyle}>
+            <MenuItem onClick={popupState.close}>Second Drawer </MenuItem>
             </Link>
             <MenuItem onClick={popupState.close}>Logout</MenuItem>
           </Menu>
