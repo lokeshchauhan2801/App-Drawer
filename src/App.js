@@ -8,7 +8,7 @@ import ClippedDrawer from './componets/clippedDrawer';
 function App() {
   return (
 
-      <Router>
+      <Router basename="/App-Drawer">
         <Link to='/'></Link>
         <Routes>
         <Route path='/' exact element={<Home/>}></Route>
